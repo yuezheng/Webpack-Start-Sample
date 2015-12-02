@@ -20,8 +20,8 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
-        loaders: ['style', 'css'],
+        test: /\.scss$/,
+        loader: 'style!css!sass?sourceMap',
         include: APP_PATH
       }
     ]
